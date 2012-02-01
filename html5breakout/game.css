@@ -1,0 +1,22 @@
+/* created by Ariel Krakowski and Ariel Di Segni */
+
+#game {
+    display: inline;
+    float: left;
+    padding-right: 20px;
+}
+#canvas {
+    background-color: #000000;
+}
+#start {
+    font-size: xx-large;
+}
+#secret {
+	background-color:white;
+	color:white; 
+	border:none;
+}
+h2 {
+    padding-top: 12px;
+    font-family: "Gill Sans", "Trebuchet MS", "sans-serif";
+}

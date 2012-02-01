@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Breakout Game - in HTML5</title>
+		<!-- created by Ariel Krakowski and Ariel Di Segni -->
+     <link rel="stylesheet" type="text/css" href="game.css" />
+     <script type="text/javascript" src="jquery-1.2.6.js"></script>
+     <script src=game.js type="text/JavaScript"></script>
+ </head>
+ <body onload="init()">
+     <div id="game">
+         <canvas id="canvas" width="394" height="300"></canvas>
+         <form>
+             <input type="submit" onclick="abort(); return false;" value="clear">
+             <input type="submit" onclick="pause(); return false;" value="pause">
+             <input type="submit" id="secret" onclick="destroymostbricks(); return false;" value="secret">
+             <input type="submit" id="start" onclick="startdraw(); return false;" value="start">	 
+				 
+   <input checked="checked" name="Radio1" id="accurate" type="radio" /><label>Accu. Bounce</label>
+   <input name="Radio1" id="random" type="radio" style="height: 20px" /> <label>Rnd</label>
+	
+         </form>
+     </div>
+     <div id="text">
+         <h2> BREAKOUT </h2>
+         <p> HTML5 Breakout Game based on <a href="http://billmill.org/static/canvastutorial/">this tutorial</a>, improving on the old-fashioned game <a href="http://javascript.internet.com/games/break-out.html">here</a>. 
+			
+			<ul>Features:
+			<li>Score for each level and total score. </li>
+			<li>Multiple levels with increasing speed and bonus points.</li>
+			<li>Great pause, start, and secret buttons!</li>
+			<li>Two bounce equations.</li>
+         </p>
+	 
+	 Lives: <label id="lives"> 3 </label> <br>
+	 Level: <label id="level"> 1 </label> <br>
+	 Level Score: <label id="score"> 0 </label> <br>
+	 Total Score: <label id="totalscore"> </label> <br>		
+	 Time: <label id="time"> 0 </label> <br>
+	 <label id="info"> Welcome to HTML5 Breakout </label>
+	 </div>
+	<p><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.stuff.zappable.com/game.html">
+		<img src="html5-val.png" alt="Validate"/></a>
+	</p>
+</body>
+</html>
